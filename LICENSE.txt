@@ -1,0 +1,15 @@
+Copyright © 2025 Mira Is Away
+All rights reserved.
+
+Permission is hereby granted to any individual or organization (“User”) to download and use these stylesheets, CSS files, and associated resources (the “Framework”) in their original, unmodified form for personal or internal use only.
+
+Restrictions
+
+Modification of the Framework in any form, including editing, remixing, or creating derivative stylesheets, is prohibited.
+
+Redistribution, hosting, or publishing of the Framework, in whole or in part, is prohibited.
+
+The Framework may not be incorporated into any other framework, library, or product without explicit prior written permission from the copyright holder.
+
+Disclaimer
+The Framework is provided “AS IS,” without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the copyright holder be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the Framework or the use or other dealings in the Framework.

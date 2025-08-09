@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" class="light"> 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Charis Semantic Styling Showcase</title>
+
+    <link rel="stylesheet" href="normalise.css" />
+    <link rel="stylesheet" href="charis.css" />
+
+    
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Header Section -->
+        <header class="text-center p-1">
+            <h1>Charis Semantic Styling Showcase</h1>
+            <p>A practical demonstration of Mira Is Away's awesome new CSS framework.</p>
+            <button id="theme-toggle" class="button hollow m-1">Switch themes</button>
+        </header>
+
+        <!-- Components Section -->
+        <section>
+            <h2>Components</h2>
+            
+            <h3>Buttons</h3>
+            <div class="card p-2 m-2">
+                <button class="button m-1">Primary Button</button>
+                <button class="button hollow m-1">Hollow Button</button>
+                <a href="#" class="button m-1">Link Button</a>
+            </div>
+
+            <h3>Cards</h3>
+            <div class="flex flex-wrap justify-center">
+                <!-- Standard Card -->
+                <div class="card m-2" style="flex-basis: 300px;">
+                    <h3>Standard Card</h3>
+                    <p>This is a standard card component. It's great for displaying contained information. It uses `var(--charis-bg3)`.</p>
+                </div>
+                <!-- NavCard (Clickable) -->
+                <a href="#" class="navcard m-2" style="flex-basis: 300px;">
+                    <h3>NavCard</h3>
+                    <p>This is a `navcard`. It's essentially a card that acts as a link. Hover over me to see the primary color glow!</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Layouts Section -->
+        <section>
+            <h2>Layouts</h2>
+
+            <h3>Flex Panel</h3>
+            <p>The `.flex-panel` component arranges cards in a flexible row.</p>
+            <div class="flex-panel p-2">
+                <div class="card">Card 1</div>
+                <div class="card">Card 2</div>
+                <div class="card">Card 3</div>
+            </div>
+
+            <h3>Grid Panel</h3>
+            <p>The `.grid-panel` component arranges cards in a responsive grid.</p>
+            <div class="grid-panel p-2">
+                <div class="card">Item A</div>
+                <div class="card">Item B</div>
+                <div class="card">Item C</div>
+                <div class="card">Item D</div>
+                <div class="card">Item E</div>
+            </div>
+        </section>
+
+        <!-- Utilities Section -->
+        <section>
+            <h2>Utilities Showcase</h2>
+            <div class="card p-2">
+                <p class="text-center text-uppercase">Centered & Uppercase Text</p>
+                <div class="flex justify-between items-center m-2 p-2 border rounded">
+                    <span>Flexbox with `justify-between`</span>
+                    <span class="p-1 rounded" style="background: var(--charis-primary);">Item</span>
+                </div>
+                <div class="grid grid-cols-3 grid-gap-2 m-2">
+                    <div class="card p-1 text-center">Grid Col 1</div>
+                    <div class="card p-1 text-center grid-span-2">Grid Col 2 (spans 2)</div>
+                    <div class="card p-1 text-center grid-span-3 glow">Grid Col 3 (spans 3, with glow)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spacer to make page scrollable and see fixed elements -->
+        <div style="height: 25vh;">
+            <p class="text-center p-3">Scroll down to see the fixed dock and search bar in action.</p>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-wrapper">
+        <input type="search" placeholder="Search">
+    </div>
+
+    <!-- Dock -->
+    <div class="dock">
+        <a href="#" class="dock-item" title="Home">🏠</a>
+        <a href="#" class="dock-item" title="Profile">👤</a>
+        <a href="#" class="dock-item" title="Settings">⚙️</a>
+        <a href="#" class="dock-item" title="Help">❓</a>
+    </div>
+
+</body>
+
+    <script>
+        document.getElementById('theme-toggle').addEventListener('click', () => {
+            document.documentElement.classList.toggle('light');
+        });
+    </script>
+
+</html>
