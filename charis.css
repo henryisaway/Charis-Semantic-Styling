@@ -51,6 +51,7 @@ Modification or redistribution prohibited.
 
 /* ===== Base Styles ===== */
 html, body {
+  height: 100dvh;
   margin: 0;
   padding: 0;
   font-family: var(--charis-font);
@@ -232,12 +233,13 @@ a:hover {
   bottom: 5.5rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 800px;
+  width: 60vw;
   transition: width var(--charis-transition-duration); ease;
   text-align: center;
 }
 .search-wrapper input[type="search"] {
-  width: 200px;
+  min-width: 200px;
+  width: 20vw;
   padding: 0.25rem 0.5rem;
   border-radius: var(--charis-radius);
   border: 0;
